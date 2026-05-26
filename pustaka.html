@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Stoikisme Dalanan | Bengkel Jahit Mental</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<header>
+    <div class="container header-content">
+        <div class="logo">
+            <img src="gudang/NEW-LOGO.png" alt="Logo">
+            <h1><span class="latin">Stoikisme</span> <span class="dalanan">DALANAN</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">SERAMBI</a></li>
+                <li><a href="log-harian.html">LOG HARIAN</a></li>
+                <li><a href="pustaka.html" class="active">PUSTAKA</a></li>
+                <li><a href="tentang-kami.html">TENTANG KAMI</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+
+    <section class="pustaka-hero">
+        <div class="hero-content">
+            <h2 style="font-family: 'Oswald', sans-serif; font-size: 3rem; letter-spacing: 5px;">PUSTAKA KARYA</h2>
+            <p style="font-style: italic;">"Satu jahitan saja meleset, ia akan kehilangan martabat"</p>
+        </div>
+    </section>
+    
+    <div class="filter-buttons">
+        <button class="aktif" onclick="saring('semua', this)">SEMUA</button>
+        <button onclick="saring('punggawa', this)">PUNGGAWA</button>
+        <button onclick="saring('rajutan', this)">RAJUTAN</button>
+        <button onclick="saring('pahlawan', this)">PAHLAWAN</button>
+    </div>
+
+    <div class="container">
+        <div class="karya-grid">
+            <div class="karya-card punggawa">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/singer-1.png" class="slide" onclick="bukaModalSlider(0, this)">
+                        <img src="gudang/singer-2.png" class="slide" onclick="bukaModalSlider(1, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>SINGER 122C</h3>
+                    <p>Pilar utama yang setia merajut benang menjadi harapan. Tetaplah melangkah, jangan lelah.</p>
+                    <div class="label-kategori">PONDASI</div>
+                </div>
+            </div>
+
+            <div class="karya-card punggawa">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/obras-1.png" class="slide" onclick="bukaModalSlider(0, this)">
+                        <img src="gudang/obras-2.png" class="slide" onclick="bukaModalSlider(1, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>TYPICAL GN794</h3>
+                    <p>Penjaga perbatasan yang memastikan karya tak terurai. Terima kasih atas ketelitian tanpa pamrih.</p>
+                    <div class="label-kategori">PENJAGA</div>
+                </div>
+            </div>
+
+            <div class="karya-card punggawa">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/overdeck-1.jpg" class="slide" onclick="bukaModalSlider(0, this)">
+                        <img src="gudang/overdeck-2.png" class="slide" onclick="bukaModalSlider(1, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>TYPICAL GK31500</h3>
+                    <p>Sang pengunci kenyamanan dalam setiap jahitan. Dedikasimu adalah bukti perjuangan sejati.</p>
+                    <div class="label-kategori">DEDIKATIF</div>
+                </div>
+            </div>
+
+            <div class="karya-card punggawa">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/singer-8280-1.png" class="slide" onclick="bukaModalSlider(0, this)">
+                        <img src="gudang/singer-8280-2.png" class="slide" onclick="bukaModalSlider(1, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>SINGER 8280</h3>
+                    <p>Membuka ruang tanpa membiarkan diri hancur terurai. Penjaga keteguhan di setiap sisi kehidupan.</p>
+                    <div class="label-kategori">PENGUNCI</div>
+                </div>
+            </div>
+
+            <div class="karya-card punggawa">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/em-200-1.png" class="slide" onclick="bukaModalSlider(0, this)">
+                        <img src="gudang/em-200-2.png" class="slide" onclick="bukaModalSlider(1, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>SINGER EM200</h3>
+                    <p>Pelukis benang yang memberikan jiwa pada kain. Karyamu abadi di setiap tarikan napas.</p>
+                    <div class="label-kategori">ARTISTIK</div>
+                </div>
+            </div>
+
+            <div class="karya-card punggawa">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/gunting-pin.png" class="slide" onclick="bukaModalSlider(0, this)">
+                        <img src="gudang/gunting-pin-1.png" class="slide" onclick="bukaModalSlider(1, this)">
+                        <img src="gudang/gunting-mitshuta.png" class="slide" onclick="bukaModalSlider(2, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                        <span class="dot" onclick="currentSlide(this, 2)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>GUNTING MANUAL</h3>
+                    <p>Langkahmu tapak demi tapak dengan presisi tinggi, laksana sniper dharatan sejati.</p>
+                    <div class="label-kategori">TAJAM</div>
+                </div>
+            </div>
+
+            <div class="karya-card punggawa">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/laptop-dan-kelengkapan-1.png" class="slide" onclick="bukaModalSlider(0, this)">
+                        <img src="gudang/laptop-dan-kelengkapan-2.png" class="slide" onclick="bukaModalSlider(1, this)">
+                        <img src="gudang/laptop-dan-kelengkapan-3.png" class="slide" onclick="bukaModalSlider(2, this)">
+                        <img src="gudang/laptop-dan-kelengkapan-4.png" class="slide" onclick="bukaModalSlider(3, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                        <span class="dot" onclick="currentSlide(this, 2)"></span>
+                        <span class="dot" onclick="currentSlide(this, 3)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>PERLENGKAPAN DESAIN</h3>
+                    <p>Didukung ekosistem alat desain digital komplit demi menghasilkan bordir presisi tinggi.</p>
+                    <div class="label-kategori">BERSATU</div>
+                </div>
+            </div>
+
+            <div class="karya-card rajutan">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/kemeja-kantor.png" class="slide" onclick="bukaModalSlider(0, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>KEMEJA KANTOR</h3>
+                    <p>Kemeja kerja dengan potongan presisi.
+                        Di desain Khusus untuk kenyamanan
+                        dan rasa percaya diri.</p>
+                    <div class="label-kategori">UTAMA</div>
+                </div>
+            </div>
+
+            <div class="karya-card rajutan">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/baju-paskibraka-depan.png" class="slide" onclick="bukaModalSlider(0, this)">
+                        <img src="gudang/baju-paskibraka-belakang.png" class="slide" onclick="bukaModalSlider(1, this)">
+                        <img src="gudang/baju-paskibraka-depan-atas.png" class="slide" onclick="bukaModalSlider(2, this)">
+                        <img src="gudang/baju-paskibraka-bagian-lengan.png" class="slide" onclick="bukaModalSlider(3, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                        <span class="dot" onclick="currentSlide(this, 2)"></span>
+                        <span class="dot" onclick="currentSlide(this, 3)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>BAJU PASKIBRAKA</h3>
+                    <p>Dijahit dengan ketelitian dan direct embroidery presisi tinggi menghasilkan karya yang megah.</p>
+                    <div class="label-kategori">BERWIBAWA</div>
+                </div>
+            </div>
+
+            <div class="karya-card rajutan">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/atribut-pa.png" class="slide" onclick="bukaModalSlider(0, this)">
+                        <img src="gudang/atribut-pi.png" class="slide" onclick="bukaModalSlider(1, this)">
+                        <img src="gudang/atribut-siluet.png" class="slide" onclick="bukaModalSlider(2, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                        <span class="dot" onclick="currentSlide(this, 2)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>ATRIBUT PRAMUKA</h3>
+                    <p>Bordir Timbul 3d kualitas premium atribut PRAMUKA.
+                        Tulisan dan logo yang jelas dan tegas.
+                    </p>
+                    <div class="label-kategori">MEMPESONA</div>
+                </div>
+            </div>
+
+            <div class="karya-card rajutan">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/kemeja-variasi-batik-dpn.png" class="slide" onclick="bukaModalSlider(0, this)">
+                        <img src="gudang/kemeja-variasi-batik-blk.png" class="slide" onclick="bukaModalSlider(1, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>KEMEJA VARIASI</h3>
+                    <p>Perpaduan seni batik dan embroidery yang presisi.
+                        Untuk Anda yang kreatif tanpa meninggalkan budaya.
+                    </p>
+                    <div class="label-kategori">KREATIF</div>
+                </div>
+            </div>
+
+            <div class="karya-card rajutan">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/atribut-satpam.png" class="slide" onclick="bukaModalSlider(0, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>ATRIBUT SATPAM</h3>
+                    <p>Bordir Timbul 3d kualitas premium atribut SATPAM.
+                        Tulisan dan logo yang jelas dan tegas.</p>
+                    <div class="label-kategori">ABSOLUT</div>
+                </div>
+            </div>
+
+            <div class="karya-card rajutan">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/nametag-timbul.png" class="slide" onclick="bukaModalSlider(0, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>NAME TAG</h3>
+                    <p>Name tag bordir timbul. Di buat dengan benang kualitas tinggi.
+                        tidak mudah tercerabut dan warna awet.
+                    </p>
+                    <div class="label-kategori">ABSOLUT</div>
+                </div>
+            </div>
+
+            <div class="karya-card rajutan">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/dreamland-depan.png" class="slide" onclick="bukaModalSlider(0, this.src)">
+                        <img src="gudang/dreamland-belakang.png" class="slide" onclick="bukaModalSlider(1, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>BAJU PDL Pi</h3>
+                    <p>Bahan American Drill. Jahitan kualitas premium yang rapi.
+                        Untuk penampilan anggun dan profesional.</p>
+                    <div class="label-kategori">ANGGUN</div>
+                </div>
+            </div>
+
+            <div class="karya-card pahlawan">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/nenek-moyang.png" class="slide" onclick="bukaModalSlider(0, this)">
+                        <img src="gudang/nenek-moyang-1.png" class="slide" onclick="bukaModalSlider(1, this)">
+                        <img src="gudang/nenek-moyang-2.png" class="slide" onclick="bukaModalSlider(1, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>BUTTERFLY</h3>
+                    <p>Sesungguhnya nenek moyang kita adalah orang yang sangat kuat dan tangguh.
+                        Jangan lupa sejarah.
+                    </p>
+                    <div class="label-kategori">MENOLAK LUPA</div>
+                </div>
+            </div>
+
+
+             <div class="karya-card pahlawan">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/mesin-potong-1.png" class="slide" onclick="bukaModalSlider(0, this)">
+                        <img src="gudang/mesin-potong-2.png" class="slide" onclick="bukaModalSlider(1, this)">
+                        <img src="gudang/mesin-potong-3.png" class="slide" onclick="bukaModalSlider(1, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>MESIN POTONG</h3>
+                    <p>Kamu yang paling gagah melibas tumpukan masalah.
+                        Kini semangatmu masih membara dalam dada.
+                    </p>
+                    <div class="label-kategori">KSATRIA</div>
+                </div>
+            </div>
+
+             <div class="karya-card pahlawan">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/patah.png" class="slide" onclick="bukaModalSlider(0, this)">
+                        <img src="gudang/patah-1.png" class="slide" onclick="bukaModalSlider(1, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>LOOPER PATAH</h3>
+                    <p>Personil yang patah dalam perjuangan merajut karya.
+                        Semoga ada keberkahan di dalamnya.
+                    </p>
+                    <div class="label-kategori">TERIMA KASIH</div>
+                </div>
+            </div>
+
+            <div class="karya-card pahlawan">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/jarum-bekas-1.png" class="slide" onclick="bukaModalSlider(0, this)">
+                        <img src="gudang/jarum-bekas-2.png" class="slide" onclick="bukaModalSlider(1, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                        <span class="dot" onclick="currentSlide(this, 1)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>JARUM BEKAS</h3>
+                    <p>Garda terdepan berjuang merajut karya sejati. Kini kau telah paripurna. Damailah kalian semua.
+                    </p>
+                    <div class="label-kategori">ISTIRAHATLAH</div>
+                </div>
+            </div>
+
+             <div class="karya-card pahlawan">
+                <div class="karya-frame">
+                    <div class="slides-container">
+                        <img src="gudang/gunting-bekas.png" class="slide" onclick="bukaModalSlider(0, this)">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(this, 0)"></span>
+                    </div>
+                </div>
+                <div class="karya-info">
+                    <h3>GUNTING</h3>
+                    <p>Wujudmu kini adalah bukti. Betapa keras perjuangan yang telah kau lewati.
+                        Terima kasih telah bersama selama ini.
+                    </p>
+                    <div class="label-kategori">PENSIUN</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <a href="https://wa.me/6287880891999" class="wa-floating" target="_blank">
+        <img src="gudang/whatsapp-logo.png" alt="WA" style="width:100%">
+    </a>
+
+    <div id="modalGambar" class="modal-zoom">
+        <span class="close-btn" onclick="tutupModal()">&times;</span>
+
+        <div class="modal-slider-box" style="text-align: center; position: relative;">
+            <img id="imgFull" class="modal-content">
+
+            <div id="modalDotsContainer" class="modal-dots-container"></div>
+        </div>
+    </div>
+
+    <button onclick="mumbul()" id="btnMumbul" title="Bali ming nduwur">
+        &#8593;
+    </button>
+
+    <footer>
+        <p>&copy; 2026 Stoikisme Dalanan. Martabat di Setiap Jahitan</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>

@@ -1,0 +1,993 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #111;
+    line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* HEADER - GARIS MARTABAT */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* TAMBAHAN KHUSUS LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo h1 .latin {
+    font-family: 'BernhardTango BT', serif;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 5px;
+    letter-spacing: 0;
+}
+
+.logo h1 span:last-child {
+    font-family: 'Oswald', sans-serif;
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #fdd835;
+    border-bottom: 2px solid #fdd835;
+}
+
+/* HERO SECTION - TAMPILAN UTAMA */
+.hero {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 20px;
+    border-bottom: 5px solid #b8a47b;
+}
+
+.hero h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: #3f3f3f;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.hero p.tagline {
+    font-size: 1.5rem; /* Fix: Spasi mbalelo wis ilang */
+    color: #555555;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+/* KOTAK FILOSOFI */
+.filosofi-box {
+    background-color: #818181;
+    color: #fff;
+    padding: 30px;
+    margin: -40px auto 40px;
+    max-width: 700px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-left: 5px solid #000;
+    border-radius: 12px;
+}
+
+.filosofi-box h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #000;
+}
+
+/* NASKAH UTAMA */
+.konten-naskah {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 12px;
+    text-align: justify;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 40px; /* Fix: Padding dobel wis dadi siji */
+}
+
+.konten-naskah p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.tulkiyem {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+/* TOMBOL */
+.btn-jelajah {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    padding: 12px 30px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.btn-jelajah:hover {
+    background-color: #ffd700;
+}
+
+.bingkai-kata {
+    background: #ffffff;
+    border: 2px solid #FFD700;
+    border-radius: 12px;
+    padding: 30px 60px 30px 60px;
+    max-width: 80%;
+    margin: 30px auto 50px auto; /* Fix: Ringkes lan ora tumpang tindhih */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.header-kata {
+    color: #ccac00;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.kata-motivasi {
+    color: #111111;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.7;
+    margin: 0 auto 15px auto;
+    max-width: 85%;
+}
+
+.tanggal-kata {
+    display: block;
+    color: #999;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* KOTAK POSTINGAN */
+.log-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.log-header {
+    background: #000;
+    color: #fff;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.log-header h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.log-date {
+    font-size: 0.8rem;
+    color: #faf7f7;
+}
+
+.log-body {
+    padding: 30px;
+}
+
+.naskah-box {
+    background: #f9f9f9;
+    border-left: 4px solid #000;
+    padding: 20px;
+    margin-bottom: 25px;
+    font-style: italic;
+    color: #333;
+}
+
+.naskah-box p {
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.naskah-box strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+}
+
+.cerita-mburi {
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 1rem;
+    color: #272727;
+}
+
+/* TOMBOL TONTON */
+.btn-tonton {
+    display: inline-block;
+    background: #d8ae05;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btn-tonton:hover {
+    background: #ffd700;
+    transform: scale(1.05);
+}
+
+/* PUSTAKA */
+.pustaka-hero {
+    background: none;
+    background-position: center;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    border-bottom: 5px solid #b8a47b;
+}
+
+.hero-content h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* PAGE TITLE */
+.page-title {
+    text-align: center;
+    padding: 60px 0 40px;
+}
+
+.page-title h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+/* GRID SYSTEM */
+.karya-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 35px;
+    padding: 30px;
+}
+
+.karya-card {
+    display: flex;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 180px; /* Dhuwur paten nggo laptop */
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.karya-card:hover {
+    border: 2px solid #ffd700;
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* FRAME GAMBAR */
+.karya-frame {
+    flex: 0 0 35%;
+    position: relative;
+}
+
+.slides-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: zoom-in;
+    transition: opacity 0.3s ease;
+}
+
+.slide:hover {
+    opacity: 0.9;
+}
+
+.slide.active {
+    display: block;
+}
+
+/* DOTS SLIDER */
+.dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    z-index: 10;
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.karya-frame:hover .dots-container {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.dot.active {
+    background: #ffc107;
+    width: 20px;
+    border-radius: 10px;
+}
+
+/* Fix: Meksa dhuwur foto melu aturan bingkai 180px neng laptop bèn ra mbleber */
+.karya-grid .karya-card img,
+.karya-frame img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+.karya-info {
+    flex: 0 0 65%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.karya-info h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.karya-info p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: justify;
+    width: 100%;
+    font-style: italic;
+}
+
+.garis-marwah {
+    height: 3px;
+    background: linear-gradient(to right, #000, #ffd700, #000);
+    width: 60%;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.label-kategori {
+    color: #b9a117;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* WA FLOATING */
+.wa-floating {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    z-index: 9999;
+    transition: 0.3s;
+}
+
+.wa-floating:hover {
+    transform: scale(1.1);
+}
+
+/* MODAL ZOOM */
+.modal-zoom {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 100%;
+    max-height: 100vh;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+.modal-dots-container {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 10001;
+}
+
+.dot-modal {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.dot-modal.active,
+.dot-modal:hover {
+    background-color: #ffcc00;
+    width: 35px;
+    border-radius: 8px;
+}
+
+.close-btn {
+    position: fixed;
+    z-index: 10001;
+    top: 20px;
+    right: 30px;
+    color: #ffcc00;
+    font-size: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #c21717;
+    transition: color 0.3s ease;
+}
+
+.card {
+    transition: all 0.4s ease;
+}
+
+.didelikne {
+    display: none;
+}
+
+/* FILTER BUTTONS */
+.filter-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-buttons button {
+    background-color: #4d4949;
+    color: #ffc107;
+    border: 2px solid #ffc107;
+    padding: 10px 20px;
+    margin: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+
+.filter-buttons button:hover,
+.filter-buttons button.active {
+    background-color: #ffc107;
+    color: #000;
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+}
+
+.filter-buttons button.aktif {
+    background-color: #ffc107;
+    color: #000;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.6);
+    border-color: #000;
+}
+
+/* TENTANG KAMI */
+.konten-biografi {
+    background: #fff;
+    margin-top: -30px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 15px;
+}
+
+.intro-vidio-box {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.intro-vidio {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 16/9;
+    border-radius: 16px;
+    border: 5px solid #ffc107;
+    object-fit: cover;
+    display: block;
+    margin: 30px auto 0px; /* Fix: Siji waé tur ana space ndhuwur */
+}
+
+.naskah-bio {
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.naskah-bio h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    margin: 30px 0 15px;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+}
+
+.naskah-bio p {
+    margin-bottom: 20px;
+}
+
+.pondasi-box {
+    background: #000;
+    color: #fff;
+    padding: 30px;
+    margin: 40px 0;
+    border-left: 10px solid #555;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+.pondasi-box h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #aaa;
+}
+
+.pondasi-box p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+.salam {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.salam h5 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.salam p {
+    color: #777;
+    letter-spacing: 2px;
+}
+
+.container-tulkiyem {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.list-tulkiyem {
+    list-style-type: disc;
+    max-width: 700px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.list-tulkiyem li {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.poin-tulkiyem {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.poin-tulkiyem ul {
+    list-style-type: disc;
+    color: #111;
+}
+
+.poin-tulkiyem li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.poin-tulkiyem strong {
+    font-weight: 700;
+}
+
+.tulkiyem-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.tulkiyem-box ul {
+    list-style-type: disc;
+    color: #333;
+    max-width: 600px;
+}
+
+.tulkiyem-box li {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+    background-color: #111;
+    color: #666;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 0.8rem;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#btnMumbul {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 0;
+    left: 20px;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    background-color: rgba(239, 245, 67, 0.8);
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+#btnMumbul:hover {
+    background-color: rgba(255, 193, 7, 1);
+}
+
+/* RESPONSIF HP */
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .filosofi-box {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    nav ul {
+        gap: 10px;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 0.75rem;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .kata-motivasi {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* 2 KOLOM KARYA (Wis dadi siji, gap nganggo 10px sekang panjalukmu) */
+    .karya-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px !important;
+        padding: 8px;
+    }
+
+    .karya-card {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    body .container .karya-frame {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        flex: none;
+    }
+
+    body .container .karya-info {
+        padding: 10px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* JUDUL KARYA H3 (Wis dadi siji, trik potong teks / line-clamp tetep aman) */
+    .karya-info h3,
+    .karya-card h3 {
+        font-size: 12px !important;
+        line-height: 1.2 !important;
+        margin-top: 5px !important;
+        margin-bottom: 3px !important;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    body .container .karya-info p {
+        font-size: 0.75rem;
+        line-height: 1.3;
+        display: block;
+    }
+
+    /* AREA HERO (SERAMBI, LOG, & PUSTAKA KARYA) */
+    body .hero,
+    body .hero-content {
+        padding: 40px 10px !important;
+        text-align: center !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+    }
+
+    body .hero h2,
+    body .hero-content h2 {
+        font-size: 1.6rem !important;
+        white-space: nowrap !important;
+        letter-spacing: 1px !important;
+        text-align: center !important;
+        width: 100% !important;
+        margin: 8px auto !important;
+        display: block !important;
+    }
+
+    body .hero p,
+    body .hero-content p {
+        font-size: 13px !important;
+        white-space: normal !important;
+        letter-spacing: 1px !important;
+        text-align: center !important;
+        width: 100% !important;
+        font-style: italic;
+        color: #666;
+        line-height: 1.4;
+        margin: 5px auto !important;
+        display: block !important;
+    }
+
+    .logo h1 {
+        display: flex !important;
+        align-items: center !important;
+        white-space: nowrap !important;
+        gap: 6px;
+    }
+
+    .logo h1 .latin {
+        font-size: 1.6rem !important;
+    }
+
+    .logo h1 span:last-child {
+        font-size: 1.6rem !important;
+    }
+
+    .pondasi-box p {
+        font-size: 1.1rem !important;
+        line-height: 1.3 !important;
+    }
+
+    /* FILTER BUTTONS */
+    .filter-buttons {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 8px !important;
+        padding: 10px 8px !important;
+        width: 100% !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+    }
+
+    .filter-buttons button {
+        flex: 1 1 auto !important;
+        margin: 0 !important;
+        padding: 5px 6px !important;
+        font-size: 10px !important;
+        letter-spacing: 1px !important;
+        white-space: nowrap !important;
+        text-align: center !important;
+    }
+
+    /* KUNCI FOTO KARYA (Potong gorden ndhuwur, fokus mesin jahit ngisor) */
+    .karya-frame .slide, .karya-frame img {
+        height: 250px !important;
+        width: 100% !important;
+        object-fit: cover !important;
+        object-position: bottom !important;
+    }
+
+    .label-kategori {
+        font-size: 13px !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+        padding: 2px 6px !important;
+    }
+
+    #modalGambar .close-btn {
+        position: fixed !important;
+        top: 20px !important;
+        right: 20px !important;
+        z-index: 999999 !important;
+        transform: none !important;
+    }
+
+    /* LOG HEADER (Tetep jèjèr sebaris nengen) */
+    .log-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 12px;
+    }
+
+    .log-header h3 {
+        font-size: 0.9rem !important;
+        line-height: 1.2;
+        margin: 0 !important;
+        max-width: 65%;
+    }
+
+    .log-header .log-date {
+        font-size: 0.75rem !important;
+        white-space: nowrap;
+    }
+
+    /* TOMBOL TONTON VIDIONYA (Imut tur lincip) */
+    .btn-tonton {
+        padding: 6px 14px !important;
+        font-size: 0.8rem !important;
+        border-radius: 15px !important;
+    }
+}
