@@ -968,8 +968,9 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-        padding: 10px 12px;
+        align-items: flex-start;
+        padding: 12px 15px;
+        min-height: 65px;
     }
 
     .log-header h3 {
@@ -977,11 +978,13 @@ footer {
         line-height: 1.2;
         margin: 0 !important;
         max-width: 65%;
+        text-align: left;
     }
 
     .log-header .log-date {
         font-size: 0.75rem !important;
         white-space: nowrap;
+        align-self: flex-end;
     }
 
     /* TOMBOL TONTON VIDIONYA (Imut tur lincip) */
