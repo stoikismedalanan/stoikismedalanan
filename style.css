@@ -179,7 +179,7 @@ nav ul li a.active {
     background: #ffffff;
     border: 2px solid #FFD700;
     border-radius: 12px;
-    padding: 30px 60px 30px 60px;
+    padding: 20px 15px;
     max-width: 80%;
     margin: 30px auto 50px auto; /* Fix: Ringkes lan ora tumpang tindhih */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
@@ -541,6 +541,8 @@ nav ul li a.active {
     font-size: 40px;
     padding: 10px;
     cursor: pointer;
+    touch-action: manipulation; 
+    -webkit-tap-highlight-color: transparent;
 }
 
 .close-btn:hover {
