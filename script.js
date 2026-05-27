@@ -35,6 +35,8 @@ function bukaModal(src) {
 }
 
 function tutupModal() {
+    document.getElementById("viewport-meta").setAttribute("content",
+        "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no");
     const m1 = document.getElementById("modalGambar");
     const m2 = document.getElementById("karyaModal");
     if (m1) m1.style.display = "none";
@@ -107,6 +109,8 @@ function currentSlide(dotElement, index) {
 }
 
 function bukaModalSlider(index, elemenGambar) {
+    document.getElementById("viewport-meta").setAttribute("content", 
+        "width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes");
     const modalUtama = document.getElementById('modalGambar');
     const imgTargetModal = document.getElementById('imgFull');
     const wadahDots = document.getElementById('modalDotsContainer');
