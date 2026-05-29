@@ -565,7 +565,7 @@ nav ul li a.active {
 }
 
 .filter-buttons button {
-    background-color: #4d4949;
+    background-color: #000;
     color: #ffc107;
     border: 2px solid #ffc107;
     padding: 10px 20px;
@@ -777,7 +777,7 @@ footer {
 }
 
 /* RESPONSIF HP */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .header-content {
         flex-direction: column;
         gap: 15px;
