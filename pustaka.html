@@ -7,7 +7,10 @@
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Stoikisme Dalanan | Bengkel Jahit Mental</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="style.css">
+    </noscript>
 </head>
 
 <header>
@@ -38,7 +41,7 @@
 
     <div class="filter-buttons">
         <button class="aktif" onclick="saring('semua', this)">SEMUA</button>
-         <button onclick="saring('rajutan', this)">RAJUTAN</button>
+        <button onclick="saring('rajutan', this)">RAJUTAN</button>
         <button onclick="saring('punggawa', this)">PUNGGAWA</button>
         <button onclick="saring('pahlawan', this)">PAHLAWAN</button>
     </div>
@@ -48,7 +51,8 @@
             <div class="karya-card rajutan">
                 <div class="karya-frame">
                     <div class="slides-container">
-                        <img src="gudang/baju-osis.png" class="slide" onclick="bukaModalSlider(0, this)">
+                        <img src="gudang/logo-stoikisme-dalanan.webp" alt="Logo Stoikisme Dalanan" width="40"
+                            height="40" style="height: 40px; width: auto;">
                     </div>
                     <div class="dots-container">
                         <span class="dot active" onclick="currentSlide(this, 0)"></span>
@@ -56,7 +60,8 @@
                 </div>
                 <div class="karya-info">
                     <h3>BAJU OSIS</h3>
-                    <p>Carilah ilmu agar bisa menjadi pribadi yang profesional, bukan menjadi orang yang pintar mencari uang.</p>
+                    <p>Carilah ilmu agar bisa menjadi pribadi yang profesional, bukan menjadi orang yang pintar mencari
+                        uang.</p>
                     <div class="label-kategori">PROFESIONAL</div>
                 </div>
             </div>
@@ -65,7 +70,7 @@
                 <div class="karya-frame">
                     <div class="slides-container">
                         <img src="gudang/model-baju-identitas.webp" class="slide" onclick="bukaModalSlider(0, this)">
-                         <img src="gudang/baju-identitas-sd.png" class="slide" onclick="bukaModalSlider(1, this)">
+                        <img src="gudang/baju-identitas-sd.png" class="slide" onclick="bukaModalSlider(1, this)">
                     </div>
                     <div class="dots-container">
                         <span class="dot active" onclick="currentSlide(this, 0)"></span>
@@ -74,7 +79,8 @@
                 </div>
                 <div class="karya-info">
                     <h3>BAJU IDENTITAS</h3>
-                    <p>Galilah potensi yang ada pada dirimu. Agar kamu punya identitas dan bisa bendiri kokoh di atas kakimu sendiri.</p>
+                    <p>Galilah potensi yang ada pada dirimu. Agar kamu punya identitas dan bisa bendiri kokoh di atas
+                        kakimu sendiri.</p>
                     <div class="label-kategori">MANDIRI</div>
                 </div>
             </div>
@@ -90,7 +96,8 @@
                 </div>
                 <div class="karya-info">
                     <h3>LOKASI SEKOLAH</h3>
-                    <p>Di mana pun kamu berada, kamu harus bisa menjadi orang yang berguna bagi lingkungan sekitarmu.</p>
+                    <p>Di mana pun kamu berada, kamu harus bisa menjadi orang yang berguna bagi lingkungan sekitarmu.
+                    </p>
                     <div class="label-kategori">SOSIAL</div>
                 </div>
             </div>
@@ -109,7 +116,8 @@
                 </div>
                 <div class="karya-info">
                     <h3>NAME-TAG</h3>
-                    <p>Apa pun tugasmu, lakukan dengan integritas. Karaktermu jauh lebih berharga dibanding nama di dada.</p>
+                    <p>Apa pun tugasmu, lakukan dengan integritas. Karaktermu jauh lebih berharga dibanding nama di
+                        dada.</p>
                     <div class="label-kategori">INTEGRITAS</div>
                 </div>
             </div>
@@ -118,9 +126,11 @@
                 <div class="karya-frame">
                     <div class="slides-container">
                         <img src="gudang/al-azhary-atributs-logo.webp" class="slide" onclick="bukaModalSlider(0, this)">
-                        <img src="gudang/al-azhary-atribut-tunas-kelapa.webp" class="slide" onclick="bukaModalSlider(1, this)">
+                        <img src="gudang/al-azhary-atribut-tunas-kelapa.webp" class="slide"
+                            onclick="bukaModalSlider(1, this)">
                         <img src="gudang/al-azhary-atributs-name.webp" class="slide" onclick="bukaModalSlider(2, this)">
-                        <img src="gudang/al-azhary=-atributs-flag.webp" class="slide" onclick="bukaModalSlider(3, this)">
+                        <img src="gudang/al-azhary=-atributs-flag.webp" class="slide"
+                            onclick="bukaModalSlider(3, this)">
                     </div>
                     <div class="dots-container">
                         <span class="dot active" onclick="currentSlide(this, 0)"></span>
@@ -179,8 +189,10 @@
                     <div class="slides-container">
                         <img src="gudang/baju-paskibraka-depan.png" class="slide" onclick="bukaModalSlider(0, this)">
                         <img src="gudang/baju-paskibraka-belakang.png" class="slide" onclick="bukaModalSlider(1, this)">
-                        <img src="gudang/baju-paskibraka-depan-atas.png" class="slide"onclick="bukaModalSlider(2, this)">
-                        <img src="gudang/baju-paskibraka-bagian-lengan.png" class="slide"onclick="bukaModalSlider(3, this)">
+                        <img src="gudang/baju-paskibraka-depan-atas.png" class="slide"
+                            onclick="bukaModalSlider(2, this)">
+                        <img src="gudang/baju-paskibraka-bagian-lengan.png" class="slide"
+                            onclick="bukaModalSlider(3, this)">
                     </div>
                     <div class="dots-container">
                         <span class="dot active" onclick="currentSlide(this, 0)"></span>
@@ -196,7 +208,7 @@
                 </div>
             </div>
 
-             <div class="karya-card rajutan">
+            <div class="karya-card rajutan">
                 <div class="karya-frame">
                     <div class="slides-container">
                         <img src="gudang/dreamland-depan.png" class="slide" onclick="bukaModalSlider(0, this.src)">
@@ -209,7 +221,8 @@
                 </div>
                 <div class="karya-info">
                     <h3>BAJU PDL Pi</h3>
-                    <p>Rasa senang setelah membantu orang lain, sesungguhnya itu adalah pahala yang langsung kita terima.</p>
+                    <p>Rasa senang setelah membantu orang lain, sesungguhnya itu adalah pahala yang langsung kita
+                        terima.</p>
                     <div class="label-kategori">IKHLAS</div>
                 </div>
             </div>
@@ -229,12 +242,13 @@
                 </div>
                 <div class="karya-info">
                     <h3>MODEL BATIK FURING</h3>
-                    <p>Kemenangan sejati bukan tentang seberapa jauh kita pergi, tapi seberapa jujur kita pada diri sendiri.</p>
+                    <p>Kemenangan sejati bukan tentang seberapa jauh kita pergi, tapi seberapa jujur kita pada diri
+                        sendiri.</p>
                     <div class="label-kategori">PERJUANGAN</div>
                 </div>
             </div>
 
-             <div class="karya-card rajutan">
+            <div class="karya-card rajutan">
                 <div class="karya-frame">
                     <div class="slides-container">
                         <img src="gudang/model-blues-batik-1.webp" class="slide" onclick="bukaModalSlider(0, this)">
@@ -249,7 +263,8 @@
                 </div>
                 <div class="karya-info">
                     <h3>VARIAN MODEL</h3>
-                    <p>Jangan jadi manusia yang perhitungan, sementara oksigen di paru-parumu saja nggak pernah dipajaki.</p>
+                    <p>Jangan jadi manusia yang perhitungan, sementara oksigen di paru-parumu saja nggak pernah
+                        dipajaki.</p>
                     <div class="label-kategori">TRANSAKSIONAL</div>
                 </div>
             </div>
@@ -269,7 +284,8 @@
                 </div>
                 <div class="karya-info">
                     <h3>ATRIBUT PRAMUKA</h3>
-                    <p>Jangan sampai hanya software dan ponselmu yang rutin di-update, tapi nalarmu dibiarkan berdebu.</p>
+                    <p>Jangan sampai hanya software dan ponselmu yang rutin di-update, tapi nalarmu dibiarkan berdebu.
+                    </p>
                     <div class="label-kategori">UPDATE NALAR</div>
                 </div>
             </div>
@@ -284,12 +300,13 @@
                     <div class="dots-container">
                         <span class="dot active" onclick="currentSlide(this, 0)"></span>
                         <span class="dot" onclick="currentSlide(this, 1)"></span>
-                         <span class="dot" onclick="currentSlide(this, 2)"></span>
+                        <span class="dot" onclick="currentSlide(this, 2)"></span>
                     </div>
                 </div>
                 <div class="karya-info">
                     <h3>T-SIRHT</h3>
-                    <p>Meskipun saat ini kita hidup di tengah "kubangan lumpur", pastikan Sistem Tawakal kita tetap RUNNING.</p>
+                    <p>Meskipun saat ini kita hidup di tengah "kubangan lumpur", pastikan Sistem Tawakal kita tetap
+                        RUNNING.</p>
                     <div class="label-kategori">TAWAKAL</div>
                 </div>
             </div>
@@ -307,7 +324,8 @@
                 </div>
                 <div class="karya-info">
                     <h3>KEMEJA VARIASI</h3>
-                    <p>Cara terbaik untuk memperbaiki diri adalah dengan berani berkaca pada kekurangan diri sendiri.</p>
+                    <p>Cara terbaik untuk memperbaiki diri adalah dengan berani berkaca pada kekurangan diri sendiri.
+                    </p>
                     <div class="label-kategori">INTROSPEKSI</div>
                 </div>
             </div>
@@ -359,7 +377,8 @@
                 </div>
                 <div class="karya-info">
                     <h3>TYPICAL GN794</h3>
-                    <p>Penjaga perbatasan yang memastikan karya tak terurai. Menjaga detail terkecil dengan ketelitian tanpa pamrih.</p>
+                    <p>Penjaga perbatasan yang memastikan karya tak terurai. Menjaga detail terkecil dengan ketelitian
+                        tanpa pamrih.</p>
                     <div class="label-kategori">PENJAGA</div>
                 </div>
             </div>
@@ -395,7 +414,8 @@
                 </div>
                 <div class="karya-info">
                     <h3>SINGER 8280</h3>
-                    <p>Membuka ruang tanpa membiarkan diri hancur terpecah. Penjaga keteguhan di setiap sisi kehidupan.</p>
+                    <p>Membuka ruang tanpa membiarkan diri hancur terpecah. Penjaga keteguhan di setiap sisi kehidupan.
+                    </p>
                     <div class="label-kategori">PENGUNCI</div>
                 </div>
             </div>
@@ -441,7 +461,8 @@
             <div class="karya-card punggawa">
                 <div class="karya-frame">
                     <div class="slides-container">
-                        <img src="gudang/laptop-dan-kelengkapan-1.webp" class="slide" onclick="bukaModalSlider(0, this)">
+                        <img src="gudang/laptop-dan-kelengkapan-1.webp" class="slide"
+                            onclick="bukaModalSlider(0, this)">
                         <img src="gudang/laptop-dan-kelengkapan-2.png" class="slide" onclick="bukaModalSlider(1, this)">
                         <img src="gudang/laptop-dan-kelengkapan-3.png" class="slide" onclick="bukaModalSlider(2, this)">
                         <img src="gudang/laptop-dan-kelengkapan-4.png" class="slide" onclick="bukaModalSlider(3, this)">
@@ -475,7 +496,8 @@
                 </div>
                 <div class="karya-info">
                     <h3>BUTTERFLY</h3>
-                    <p>Sesungguhnya nenek moyang kita adalah pondasi yang sangat kuat dan tangguh. Jangan lupa sejarah.</p>
+                    <p>Sesungguhnya nenek moyang kita adalah pondasi yang sangat kuat dan tangguh. Jangan lupa sejarah.
+                    </p>
                     <div class="label-kategori">MENOLAK LUPA</div>
                 </div>
             </div>
@@ -553,7 +575,8 @@
                 </div>
                 <div class="karya-info">
                     <h3>GUNTING</h3>
-                    <p>Wujudmu kini bukti. Betapa keras perjuangan yang telah kau lewati. Terima kasih telah bersama selama ini.</p>
+                    <p>Wujudmu kini bukti. Betapa keras perjuangan yang telah kau lewati. Terima kasih telah bersama
+                        selama ini.</p>
                     <div class="label-kategori">PENSIUN</div>
                 </div>
             </div>

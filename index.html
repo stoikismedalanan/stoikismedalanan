@@ -13,14 +13,18 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Stoikisme Dalanan">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="style.css">
+    </noscript>
     <meta name="google-site-verification" content="nLmwlOe4mqO4dSfiI4_Q602jywK5rOa_-8KUNXbVjCk" />
 </head>
 
 <header class="header-content">
     <div class="container header-content">
         <div class="logo">
-            <img src="gudang/logo-stoikisme-dalanan.webp" alt="Logo" height="40" width="auto">
+            <img src="gudang/logo-stoikisme-dalanan.webp" alt="Logo Stoikisme Dalanan" width="40" height="40"
+                style="height: 40px; width: auto;">
             <h1><span class="latin">Stoikisme</span> <span class="dalanan">DALANAN</span></h1>
         </div>
         <nav>
